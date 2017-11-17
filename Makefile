@@ -22,6 +22,4 @@ edges.csv: graph.json
 	gsed -i '1i:END_ID,:START_ID,:TYPE' csv/edges.csv
 
 graph.db: nodes.csv edges.csv
-	# neo4j-admin import --database=facebook.db --nodes:Node=nodes.csv  --relationships:LIKE=edges.csv
 	neo4j-import --into graph.db --nodes:Node csv/nodes.csv  --relationships:LIKE csv/edges.csv
-	# docker run --rm -it -v $(pwd)/data:/data neo4j -v $(pwd)/csv:/csv "bin/neo4j-import --into /data/databases/graph.db --nodes:Node /csv/nodes.csv  --relationships:LIKE /csv/edges.csv"
