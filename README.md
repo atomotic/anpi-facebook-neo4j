@@ -5,7 +5,10 @@ a collection of likes on facebook pages (not personal accounts!) of italian fasc
 http://patriaindipendente.it/progetto-facebook/  
 http://patriaindipendente.it/progetto-facebook/doc.html
 
-here i try to import this data into neo4j graph database to allow a more detailed discovery.
+![](https://i.imgur.com/1HWMHTQ.png)
+
+
+here i try to import this data into [neo4j](https://neo4j.org) graph database to allow a more detailed discovery.
 
 the process is explained in this [jupyter notebook](https://github.com/atomotic/anpi-facebook-neo4j/blob/master/italian%20fascism%20on%20facebook%20pages%20into%20neo4j.ipynb)
 ([bash_kernel](https://github.com/takluyver/bash_kernel) is required) or the [Makefile](https://github.com/atomotic/anpi-facebook-neo4j/blob/master/Makefile)
